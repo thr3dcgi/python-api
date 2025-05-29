@@ -603,7 +603,7 @@ class Shotgun(object):
                 return lval == rval
             elif operator == "is_not":
                 return lval != rval
-        elif field_type in ("float", "number", "date", "date_time"):
+        elif field_type in ("float", "number", "date", "date_time", "duration"):
             if operator == "is":
                 return lval == rval
             elif operator == "is_not":
